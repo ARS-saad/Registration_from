@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Register</h2>
+        <form action="#" method="post">
+
+            <input type="email" placeholder="Email" id="email" name="email" required>
+
+            <input type="password" placeholder="Password" id="password" name="password" required>
+
+            <input type="password" id="retype-password" name="retype-password" placeholder="Retype Password" required>
+
+            <div class="name-container">
+                <div class="name-half">
+                    <input type="text" id="first-name" name="first-name" placeholder="Fist name" required>
+                </div>
+                <div class="name-half">
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                </div>
+            </div>
+
+
+            <div class="gender-container">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+
+            <select id="country" class="country" name="country" required>
+                <option value="us">Country</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+                <option value="au">Bangladesh</option>
+
+                <!-- Add more countries as needed -->
+            </select>
+
+            <div class="checkboxes">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree with tearm and Conditions</label>
+            </div>
+            <div class="checkboxes">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">I want to receive the newsletter</label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
